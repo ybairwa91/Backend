@@ -1,0 +1,17 @@
+{
+  "name": "learningbackend",
+  "version": "1.0.0",
+  "description": "Started learning nodejs from scratch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lessons"
+  ],
+  "author": "Yogesh K Bairwa",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}
