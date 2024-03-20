@@ -14,5 +14,9 @@
   "dependencies": {
     "leaflet": "^1.9.4",
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "parcel": "^2.12.0"
   }
 }

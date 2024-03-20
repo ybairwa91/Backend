@@ -1,4 +1,17 @@
 /*
+//learning
+what is npm,we use it,how to install,type of dependencies,installing locally and globally,
+knowing about package.json and node_module files
+
+NPM
+  A COMMAND LINE INTERFACE APP that use to manage and install open source packages.
+  these packages comes with bunch of js files also npm.
+  
+
+
+
+
+
 Scenario before npm ,
 to install or include any library for our app functionalities we use to include library using script tag
 ie
@@ -64,4 +77,38 @@ var curryN = require('lodash/fp/curryN'
 
 //install es version
 npm install lodash-es
+
+
+
+//Import lodash
+import { cloneDeep } from "./node_modules/lodash-es/cloneDeep";
+
+
+
+const state = {
+  cart: [
+    { product: 'bread', quantity: 5 },
+    { product: 'pizza', quantity: 5 },
+  ],
+  user: { loggedIn: true }
+}
+const stateClone = Object.assign({}, state)
+
+console.log(stateClone);
+
+state.user.loggedIn = false;
+console.log(stateClone);
+
+//use lodash
+
+const stateDeepClone = cloneDeep(state)
+console.log(stateDeepClone);
+
+
+//NOTE-never include node_module folder when u share ur project or send to someone because it can be retrive back using npm i
+//never delete package.json fill it will help to install all lib using npm i in another place
+
+
 */
+
+
