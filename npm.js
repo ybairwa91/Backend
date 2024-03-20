@@ -1,5 +1,5 @@
 /*
-Scenario before Npm ,
+Scenario before npm ,
 to install or include any library for our app functionalities we use to include library using script tag
 ie
 <script src="link of library mentioned in modules(CDN)"></script>
@@ -26,10 +26,42 @@ but why we need npm if we doing this,well it created problem in our big projects
 
   lets use npm and install a leaflet library
   cmd is [npm install leaflet]
-  now check package.json u will see a new field or to say library names leaflet means u installed it correctly 
+  now check package.json u will see a new field or to say library names leaflet means u installed it correctly
   and also downloaded a file called node_module which has all functionalities u going to use
- 
- 
- 
-  */
 
+  if we any library uses commonjs module system we can not directly use it,we need module bundler to import it
+
+
+  
+lets install lodash
+  
+In the browser using index.html
+ <script src="lodash.js"></script>
+
+
+Using npm
+$ npm i -g npm
+$ npm i --save lodash
+
+
+In Node.js:
+// Load the full build.
+var _ = require('lodash');
+// Load the core build.
+var _ = require('lodash/core');
+// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+var fp = require('lodash/fp');
+ 
+// Load method categories.
+var array = require('lodash/array');
+var object = require('lodash/fp/object');
+ 
+// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+var at = require('lodash/at');
+var curryN = require('lodash/fp/curryN'
+
+
+
+//install es version
+npm install lodash-es
+*/
