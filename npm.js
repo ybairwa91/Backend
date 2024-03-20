@@ -6,7 +6,8 @@ knowing about package.json and node_module files
 NPM
   A COMMAND LINE INTERFACE APP that use to manage and install open source packages.
   these packages comes with bunch of js files also npm.
-  
+  use to manage 3rd party packages that we include to use in our applications
+
 
 
 
